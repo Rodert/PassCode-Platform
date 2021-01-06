@@ -56,6 +56,16 @@ order
 
 SQL文件目录：[sql](SQL.md)
 
+### 搭建管理后台
+
+使用renren 开源后台框架
+
+### 自动生成前后端代码
+
+
+
 # 参考
 
-https://www.cnblogs.com/jackson0714/p/12717818.html 
+完整搭建（使用了renren开源代码）：https://www.cnblogs.com/jackson0714/p/12717818.html
+
+推荐参考：https://github.com/mtcarpenter/mall-cloud-alibaba 

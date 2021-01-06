@@ -13,5 +13,7 @@
         <module>passcode-product</module>
         <module>passcode-order</module>
         <module>passcode-user</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
     </modules>
 </project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.javapub.passcode.passcodeproduct.dao.BasisDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.javapub.passcode.passcodeproduct.entity.BasisEntity" id="basisMap">
+        <result property="id" column="id"/>
+        <result property="lecturerid" column="lecturerId"/>
+        <result property="producttitle" column="productTitle"/>
+        <result property="coverimg" column="coverImg"/>
+        <result property="status" column="status"/>
+        <result property="remark" column="remark"/>
+        <result property="productprice" column="productPrice"/>
+        <result property="productdiscount" column="productDiscount"/>
+        <result property="modifiedtime" column="modifiedTime"/>
+        <result property="createtime" column="createTime"/>
+        <result property="producthandout" column="productHandout"/>
+    </resultMap>
+
+
+</mapper>
