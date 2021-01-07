@@ -15,5 +15,6 @@
         <module>passcode-user</module>
         <module>renren-fast</module>
         <module>renren-generator</module>
+        <module>passcode-common</module>
     </modules>
 </project>

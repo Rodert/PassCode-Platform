@@ -1,4 +1,4 @@
-package com.javapub.passcode.passcodeorder.common.utils;
+package com.javapub.passcode.common.utils;
 
 
 import java.util.LinkedHashMap;

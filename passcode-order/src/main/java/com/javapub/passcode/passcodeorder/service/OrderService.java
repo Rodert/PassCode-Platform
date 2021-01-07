@@ -1,7 +1,7 @@
 package com.javapub.passcode.passcodeorder.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.javapub.passcode.passcodeorder.common.utils.PageUtils;
+import com.javapub.passcode.common.utils.PageUtils;
 import com.javapub.passcode.passcodeorder.entity.OrderEntity;
 
 import java.util.Map;

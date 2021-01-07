@@ -1,7 +1,7 @@
 package com.javapub.passcode.passcodeproduct.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.javapub.passcode.passcodeproduct.common.utils.PageUtils;
+import com.javapub.passcode.common.utils.PageUtils;
 import com.javapub.passcode.passcodeproduct.entity.DetailEntity;
 
 import java.util.Map;

@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.javapub.passcode.passcodeuser.entity.SysAdminEntity;
 import com.javapub.passcode.passcodeuser.service.SysAdminService;
-import com.javapub.passcode.passcodeuser.common.utils.PageUtils;
-import com.javapub.passcode.passcodeuser.common.utils.R;
+import com.javapub.passcode.common.utils.PageUtils;
+import com.javapub.passcode.common.utils.R;
 
 
 

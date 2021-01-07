@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.javapub.passcode.passcodeorder.entity.OrderEntity;
 import com.javapub.passcode.passcodeorder.service.OrderService;
-import com.javapub.passcode.passcodeorder.common.utils.PageUtils;
-import com.javapub.passcode.passcodeorder.common.utils.R;
+import com.javapub.passcode.common.utils.PageUtils;
+import com.javapub.passcode.common.utils.R;
 
 
 

@@ -1,4 +1,4 @@
-package com.javapub.passcode.passcodeorder.common.utils;
+package com.javapub.passcode.common.utils;
 
 /**
  * 自定义异常

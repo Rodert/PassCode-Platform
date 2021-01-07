@@ -1,4 +1,4 @@
-package com.javapub.passcode.passcodeuser.common.utils;
+package com.javapub.passcode.common.utils;
 
 import java.util.HashMap;
 import java.util.Map;

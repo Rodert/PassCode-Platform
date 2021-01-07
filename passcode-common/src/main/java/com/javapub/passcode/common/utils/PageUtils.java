@@ -1,4 +1,4 @@
-package com.javapub.passcode.passcodeproduct.common.utils;
+package com.javapub.passcode.common.utils;
 
 import java.io.Serializable;
 import java.util.List;
