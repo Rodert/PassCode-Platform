@@ -1,6 +1,7 @@
 package com.javapub.passcode.passcodeorder.controller;
 
 import java.util.Arrays;
+import java.util.Date;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,6 @@ import com.javapub.passcode.passcodeorder.entity.OrderEntity;
 import com.javapub.passcode.passcodeorder.service.OrderService;
 import com.javapub.passcode.common.utils.PageUtils;
 import com.javapub.passcode.common.utils.R;
-
 
 
 /**
@@ -34,7 +34,7 @@ public class OrderController {
      * 列表
      */
     @RequestMapping("/list")
-    public R list(@RequestParam Map<String, Object> params){
+    public R list(@RequestParam Map<String, Object> params) {
         PageUtils page = orderService.queryPage(params);
 
         return R.ok().put("page", page);
@@ -45,8 +45,8 @@ public class OrderController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    public R info(@PathVariable("id") Long id){
-		OrderEntity order = orderService.getById(id);
+    public R info(@PathVariable("id") Long id) {
+        OrderEntity order = orderService.getById(id);
 
         return R.ok().put("order", order);
     }
@@ -55,8 +55,8 @@ public class OrderController {
      * 保存
      */
     @RequestMapping("/save")
-    public R save(@RequestBody OrderEntity order){
-		orderService.save(order);
+    public R save(@RequestBody OrderEntity order) {
+        orderService.save(order);
 
         return R.ok();
     }
@@ -65,8 +65,8 @@ public class OrderController {
      * 修改
      */
     @RequestMapping("/update")
-    public R update(@RequestBody OrderEntity order){
-		orderService.updateById(order);
+    public R update(@RequestBody OrderEntity order) {
+        orderService.updateById(order);
 
         return R.ok();
     }
@@ -75,10 +75,23 @@ public class OrderController {
      * 删除
      */
     @RequestMapping("/delete")
-    public R delete(@RequestBody Long[] ids){
-		orderService.removeByIds(Arrays.asList(ids));
+    public R delete(@RequestBody Long[] ids) {
+        orderService.removeByIds(Arrays.asList(ids));
 
         return R.ok();
+    }
+
+    /**
+     * 20210120 18:47
+     * <p>
+     * 测试 Feign
+     */
+    @RequestMapping("/list/test")
+    public R listTest() {
+        OrderEntity orderEntity = new OrderEntity();
+        orderEntity.setId(1L);
+        orderEntity.setCreatetime(new Date());
+        return R.ok().put("list", Arrays.asList(orderEntity));
     }
 
 }
